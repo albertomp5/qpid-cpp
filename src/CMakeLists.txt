@@ -151,7 +151,7 @@ if (VALGRIND_FOUND)
   option(ENABLE_VALGRIND "Use valgrind to detect run-time problems" ON)
 endif (VALGRIND_FOUND)
 
-option(ENABLE_WARNING_ERROR "Consider compiler warnings to be errors" ON)
+option(ENABLE_WARNING_ERROR "Consider compiler warnings to be errors" OFF)
 if (ENABLE_WARNING_ERROR)
   set (WARNING_FLAGS "${WARNING_ERROR} ${WARNING_FLAGS}")
 endif (ENABLE_WARNING_ERROR)
